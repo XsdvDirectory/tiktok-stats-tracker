@@ -1,0 +1,36 @@
+{
+  "name": "tiktok-stats-tracker",
+  "version": "1.0.0",
+  "description": "TikTok Video Statistics Tracker with Google Sheets Integration",
+  "main": "api/functions/fetch-tiktok-data.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "start": "node server.js",
+    "test": "node --test test/*.js",
+    "test:fetch": "node test/test-fetch.js",
+    "test:sync": "node test/test-sync.js"
+  },
+  "keywords": [
+    "tiktok",
+    "analytics",
+    "google-sheets",
+    "vercel",
+    "supabase"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "googleapis": "^118.0.0",
+    "google-auth-library": "^9.0.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
